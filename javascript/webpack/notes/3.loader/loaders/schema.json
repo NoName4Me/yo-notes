@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "properties": {
+    "quotes": {
+      "type": "boolean"
+    },
+    "comments": {
+      "type": "boolean"
+    }
+  },
+  "errorMessage": {
+    "quotes": "应该为 {Boolean} 值",
+    "comments": "应该为 {Boolean} 值"
+  },
+  "additionalProperties": false
+}

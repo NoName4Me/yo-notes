@@ -1,0 +1,17 @@
+{
+  "name": "webpack-abc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "boot": "lerna bootstrap --hoist",
+    "build": "lerna run build",
+    "add": "lerna add"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lerna": "^3.10.5"
+  }
+}
