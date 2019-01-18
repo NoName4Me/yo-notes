@@ -230,6 +230,8 @@ npm i -D postcss-loader autoprefixer
 
 让 JavaScript 文件经过 babel 转译。
 
+一般需要安装这么几个包 `npm i -D babel-loader @babel/core @babel/preset-env`，与 `.babelrc` 配置结合使用。
+
 ```js
 module: {
   rules: [

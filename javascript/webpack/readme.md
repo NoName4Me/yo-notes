@@ -17,7 +17,7 @@
 
 [0. webpack 介绍](./notes/0.introduce/)
 
-[1. webpack 概览](./notes/1.overview/)
+[1. webpack 基本功能](./notes/1.overview/)
 
 [2. 配置开发环境](./notes/2.dev-server/)
 
@@ -25,7 +25,7 @@
 
 [4. 常见 plugin 介绍以及写一个自己的 plugin](./notes/4.plugin/)
 
-[5. webpack 打包优化](./notes/5.optimize/)
+[5. webpack 优化](./notes/5.optimize/)
 
 [6. 项目规范(lint、测试)](./notes/6.lint-test/)
 

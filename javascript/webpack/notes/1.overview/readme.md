@@ -7,7 +7,7 @@
 * Resolve
 * 入口
 * 出口
-* 加载器（loader）
+* loader
 * 插件
 * 模式（mode)
 * 浏览器兼容
@@ -58,7 +58,7 @@ module.exports = {
 
 #### 多入口
 
-**注意**: 不要单独为 vendor 或其它非执行入口创建 entry，因为 `optimization.splitChunks` 水自动完成分离 vendor 等工作。
+**注意**: 不要单独为 vendor 或其它非执行入口创建 entry，因为 `optimization.splitChunks` 会自动完成分离 vendor 等工作。
 
 ```js
 module.exports = {
@@ -88,10 +88,9 @@ module.exports = {
 
 filename还支持 `id`、`hash`、`chunkhash`、`contenthash`，也支持函数方式，更多参阅[文档 `output.filename`](https://webpack.js.org/configuration/output/#output-filename)。
 
+### loader
 
-### 加载器
-
-webpack 自身只识别 js 和 JSON 文件，加载器的作用就是讲其它文件（比如图片）转换为合法的模块，这个模块如果在你的应用里有使用，会被加到依赖图里。
+webpack 自身只识别 js 和 JSON 等文件，loader 的作用很多就是将其它文件（比如图片）转换为合法的模块，这个模块如果在你的应用里有使用，会被加到依赖图里。
 
 比如下面的代码就是告诉 webpack 编译器，当遇到 `require()`/`import` 引用 `'.txt'` 文件时，先使用 `raw-loader` 转换，然后再加入到打包里。
 
@@ -112,7 +111,7 @@ module.exports = {
 
 ### 插件
 
-与加载器单一的转换功能不同，插件可以提供很多能力，比如打包优化、资源管理、注入环境变量等。
+与 loader 单一的转换功能不同，插件可以提供很多能力，比如打包优化、资源管理、注入环境变量等。
 
 ```js
 const HtmlWebpackPlugin = require('html-webpack-plugin'); // 通过 npm 安装
