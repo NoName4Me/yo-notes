@@ -1,6 +1,6 @@
 # 7. others
 
-> TODO
+> // TODO:
 
 * [x] [git commit message](./git-commit-msg.md)
 * [ ] output type? (umd, commonjs ...)
